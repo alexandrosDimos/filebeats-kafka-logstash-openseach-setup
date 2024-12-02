@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  logstash:
+    image: logstash-job
+    container_name: logstash-service
+    deploy:
+      restart_policy:
+        condition: on-failure
+    extra_hosts:
+      - "sl100pipeline:192.168.2.223"
+      - "search:192.168.2.225"
+    environment:
+      LS_JAVA_OPTS: "-Xmx256m -Xms256m"
+

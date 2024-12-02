@@ -1,0 +1,4 @@
+- pipeline.id: kafka-logstash-opensearch-pipeline
+  path.config: "/usr/share/logstash/pipeline/kafka-pipeline.conf"
+
+

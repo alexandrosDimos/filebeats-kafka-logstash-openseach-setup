@@ -1,0 +1,3 @@
+node.name: logstash_kafka_opensearch
+api.environment: dev
+
